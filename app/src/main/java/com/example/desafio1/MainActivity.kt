@@ -23,14 +23,14 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             DESAFIO1Theme {
-                TutorialScreen()
+                Tutorial()
             }
         }
     }
 }
 
 @Composable
-fun TutorialScreen() {
+fun Tutorial() {
     Column(modifier = Modifier.fillMaxSize()) {
         Image(
             painter = painterResource(R.drawable.bg_compose_background),
@@ -67,6 +67,6 @@ fun TutorialScreen() {
 @Composable
 fun TutorialPreview() {
     DESAFIO1Theme {
-        TutorialScreen()
+        Tutorial()
     }
 }
